@@ -1,17 +1,11 @@
-* {
-    box-sizing: border-box;
-} 
-
-body {
-    display:flex;
+.container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin:50px auto;
+    margin: 50px auto;
 }
 
 .button {
-    position: static;
-    
-    background-color:#556B2F;
+    background-color: #556B2F;
     color: #fff;
 }
