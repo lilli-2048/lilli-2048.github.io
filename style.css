@@ -11,7 +11,7 @@ body {
 
 .button {
     position: static;
-    top:50%;
+    
     background-color:#556B2F;
-    color: #fff
+    color: #fff;
 }
