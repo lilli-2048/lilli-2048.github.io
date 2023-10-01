@@ -1,67 +1,56 @@
-/* NAVBAR STYLING STARTS */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: teal;
-  color: #2E8B57;
+/* Reset some default list styles */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.nav-links a {
-  color: #2E8B57;
-}
-
-/* LOGO */
-.logo {
-  font-size: 32px;
-}
-
-/* NAVBAR MENU */
+/* Style the navigation menu */
 .menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
-}
-
-.menu li:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
-  transition: 0.3s ease;
+    background-color: #333;
+    text-align: center;
 }
 
 .menu li {
-  padding: 5px 14px;
+    display: inline;
+    margin: 0 10px;
 }
 
-/* DROPDOWN MENU */
-.services {
-  position: relative; 
+.menu li a {
+    text-decoration: none;
+    color: #fff;
 }
 
+/* Style the dropdown menu */
 .dropdown {
-  background-color: rgb(1, 139, 139);
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 8px;
-  top: 35px;
+    position: relative;
 }
 
-.dropdown li + li {
-  margin-top: 10px;
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
-.dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    padding: 10px;
 }
 
-.dropdown li:hover {
-  background-color: #4c9e9e;
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
-.services:hover .dropdown {
-  display: block;
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
 }
