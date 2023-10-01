@@ -7,7 +7,7 @@ ul, li {
 
 /* Style the navigation menu */
 .menu {
-    background-color: #333;
+    background-color: #2E8B57;
     text-align: center;
 }
 
@@ -33,10 +33,10 @@ ul, li {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #2E8B57;
     top: 100%;
     left: 0;
-    width: 150px;
+    width: 200px;
     padding: 10px;
 }
 
